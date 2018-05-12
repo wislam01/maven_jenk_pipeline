@@ -7,9 +7,9 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Create') { 
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                sh 'mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false' 
             }
         }
     }
@@ -23,9 +23,9 @@ pipeline {
                 }
             }
         }
-    stage('Deliver') {
+    stage('Build') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                sh 'mvn package'
             }
         }
 }
