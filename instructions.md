@@ -7,7 +7,7 @@ Steps:
 - Run Jenkins in a Docker container
 - Set up Jenkins and secure it
 - Create Pipeline project in Jenkins, from the Definition field, choose Pipeline script from SCM.
-- Fropm SCM choose Git.
+- From SCM choose Git.
 - Create initial pipeline as a Jenkinsfile
 
 - First create pipeline to download Docker image, and run as a Docker container. 
