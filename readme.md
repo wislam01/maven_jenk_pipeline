@@ -1,5 +1,3 @@
-#This is a repo for the Nokia interview project
-
 The project requirements
 High-level instructions:
 
